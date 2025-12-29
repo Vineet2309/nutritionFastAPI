@@ -50,7 +50,7 @@ def predict(data:nutrition_data):
     for ele in colY:
         diction[ele]=int(prediction[0][i])
         i=i+1
-    diction['severity']=int(pred_serveri)
+    diction['severity']=int(pred_serveri[0])
 
     Medirecommender = MedicationRecommender(
         csv_path="./model2/deficiency_with_medications.csv"
